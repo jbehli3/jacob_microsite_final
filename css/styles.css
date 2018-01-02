@@ -1,0 +1,407 @@
+@charset "UTF-8";
+/* CSS Document */
+
+/* Reset browser default styles: */
+html, body, h1, h2, h3, h4, h5, h6, p, ol, ul, li, pre, code, address, variable, form, fieldset, blockquote {
+  padding: 0;
+  margin: 0;
+  font-size: 100%;
+  font-weight: normal;
+  list-style: none;
+}
+
+/* border-box so that border widths aren't added to the total width of the element: */
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+/* Clearfix to make floated elements behave correctly: */
+  .cf:before, .cf:after { content: ""; display: table; }
+  .cf:after { clear: both; }
+  .cf { zoom: 1; }
+  .clear { clear: both;}
+
+/* In order for the percentage heights to work we need this: */
+html, body { height:100%; }
+
+
+
+
+/* ========================================================================================
+   Fluid grid rules examples. Use your own names to better relate rules with HTML Markup
+   ======================================================================================== */
+/*
+.one_unit {
+	width: 12.666%;
+	margin: 0px 2% 0px 2%;
+	float: left;	
+}
+.two_unit {
+	width: 29.333%;
+	margin: 0px 2% 0px 2%;
+	float: left;	
+}
+.three_unit {
+	width: 46%;
+	margin: 0px 2% 0px 2%;
+	float: left;	
+}
+.four_unit {
+	width: 62.666%;	
+	margin: 0px 2% 0px 2%;
+	float: left;
+}
+.five_unit {
+	width: 79.333%;	
+	margin: 0px 2% 0px 2%;
+	float: left;
+}
+.six_unit {
+	width: 96%;	
+	margin: 0px 2% 0px 2%;
+}
+*/
+
+
+/* ========================================================================================
+   Helvetica Font Family Declarations
+   ======================================================================================== */
+
+
+.thin { font-family: 'HelveticaNeueLTStd-Th';}
+.light { font-family: 'HelveticaNeueLTStd-Lt';}
+.roman { font-family: 'HelveticaNeueLTStd-Roman';}
+.medium { font-family: 'HelveticaNeueLTStd-Md';}
+.bold { font-family: 'HelveticaNeueLTStd-Bd';}
+.heavy { font-family: 'HelveticaNeueLTStd-Hv';}
+.black { font-family: 'HelveticaNeueLTStd-Blk';}
+
+.black{
+	background-color:black;
+}
+
+
+
+/* ==========================================================================
+   Add your own rules below
+   ========================================================================== */
+
+
+/* Get started with some general rules: */
+body {
+	font-family: 'HelveticaNeueLTStd-Roman';
+}	
+.container {
+	width: 90%;
+	max-width: 1200px;
+	margin: 0px auto;
+}
+
+
+/* Typography: First generic rules for type (font-family, sizes, line-heights...). Then define the behavior for each section specifically. For example ".intro p {margin: 20px;}". */
+h1 {
+	font-size: 45px;
+	font-family: 'HelveticaNeueLTStd-BdCn';
+	
+}
+h2 {
+	font-size: 20px;
+	font-family: 'HelveticaNeueLTStd-BdCn';
+	margin: 0px 2% 0px 2%;
+	float: right; 
+	position:relative; 
+	padding-right: 10px;		
+}
+p {	
+	font-family:'HelveticaNeueLTStd-Lt';	
+	line-height: 24px;
+}
+
+
+/* ======================================================
+   Header
+   ====================================================== */
+
+header {
+	width: 96%;
+	margin: 0px 2% 0px 2%;
+	padding: 20px 0px 10px 0px;
+	border-bottom: 1px solid black;
+}
+
+.logo-1 {
+	float: left;	
+	margin: 0px 20px 0px 0px;
+}
+.logo2 {
+	float: left;	
+	margin: 0px 10px 20px 20px;
+}
+
+
+
+/* ======================================================
+   Navigation
+   ====================================================== */
+
+/*start with the navigation section first and then specify how the list items behave inside the nav section: */
+
+nav {
+	width: 62.666%;	
+	margin: 0px 2% 0px 2%;
+	float: right;
+	background-color: black;
+	padding: 15px 0px 15px 0px;
+	font-size: 14px;
+}
+nav li {
+	font-family:'HelveticaNeueLTStd-BdCn';
+	float: right;
+	margin: 0px 0px 0px 0px;
+	
+}
+nav li a {
+	color: white;
+	text-decoration:none;
+    padding: 13px;	
+}
+
+nav li a:hover {
+	color: red;
+	
+}
+.sep {
+	color: white;
+	font-family:'HelveticaNeueLTStd-Lt';
+}
+
+
+/*li b {
+	font-family:'HelveticaNeueLTStd-Lt';
+	padding-top:13px;
+	padding-bottom:13px;
+	padding-right:13px;
+	padding-left:13px;	
+	
+}*/
+
+/*linklist{
+	font-size: 50px;
+	
+}*/
+
+
+
+
+/* ======================================================
+   Section Boxes
+   ====================================================== */
+
+/* section-box-1: */
+.section-box-1 {
+	width: 62.666%;	
+	margin: 0px 2% 0px 2%;
+	float: right;
+	height: 350px;
+	background-color: red;
+	background-image: url(../images/DSC_0131_1.jpg);
+	background-size: cover;
+}
+
+.home-date h2 {
+	color: white;
+	margin: 25px 2% 0px 0px;
+}
+
+ 
+/* section-box-2: */
+.section-box-2 {
+	background-color: blue;
+	width: 46%;
+	margin: -250px 2% 0px 2%;
+	float: left;
+	background-image: url(../images/DSC_0017_1.jpg);
+	background-size: cover;
+	height: 400px;
+}
+.section-box-2 h1 {
+	background-color: black;
+	color: white;
+	padding: 2%;
+}
+
+
+/* section-box-3: */
+.section-box-3 {
+	background-color: #00205b;
+	width: 79.333%;	
+	margin: -150px 2% 0px 2%;
+	float: right;
+	position: relative;
+	z-index: 2;
+}
+.intro {
+	color: white;
+	width: 62.666%;	
+	margin: 20px 2% 0px 2%;
+}
+.footnote {
+	color: white;
+	width: 62.666%;	
+	margin: 20px 2% 20px 2%; 
+	float: right;
+}
+
+
+/* section-box-4: */
+.section-box-4 {
+	width: 48%;
+	margin: -30px 0px 0px 2%;
+	float: left;
+	height: 400px;
+}
+.link-text {
+	background-color: red;
+	color: white;
+	padding: 40px 2% 20px 2%;
+}
+.link-list {
+	padding: 20px 2% 0px 0px;
+} 
+.link-list:hover {
+	color: #ef3340;
+}
+
+/*behavior of list items inside the ".link-list" div:*/
+.link-list li {
+	text-align: right;
+	margin: 10px 0px 10px 0px;
+}
+.link-list li a {
+	color: black;
+}
+.link-list li a:hover {
+	color: #ef3340;
+}
+
+
+/* section-box-5: */
+
+.section-box-5 {
+	background-image: url(../images/DSC_0259_1.jpg);
+	background-size: cover;
+	background-color: grey;
+	width: 48%;
+	margin: 0px 2% 0px 0px;
+	float: right;
+	height: 300px;
+}
+
+
+/* ======================================================
+   Footer
+   ====================================================== */
+
+footer {
+	width: 96%;
+	margin: 0px 2% 20px 2%;
+	border-top: 1px solid black;
+}
+/*behavior of list items inside footer:*/
+footer ul {
+	float: right;
+	margin: 20px 0px 0px 0px;
+}
+footer li {
+	float: left;
+	margin: 10px;
+}
+footer li a {
+	color: black;
+}
+.social {
+	font-size: 20px;
+}
+
+
+
+
+
+
+
+
+
+/* ======================================================
+   MEDIA QUERIES for responsivness
+   ====================================================== */
+
+
+/* smartphones (only list declarations that change): */
+
+@media (max-width: 600px){
+	
+nav {
+	width: 96%;	
+	margin: 0px 2% 0px 2%;
+	float: none;
+}
+nav li {
+	float: none;
+	margin: 0px 0px 10px 0px;
+	
+}
+.sep {
+	display: none;
+}
+	
+.section-box-1 {
+	width: 96%;	
+	margin: 0px 2% 0px 2%;
+	float: none;
+	background-position: center;
+}
+.section-box-2 {
+	background-color: blue;
+	width: 96%;
+	margin: 0px 2% 0px 2%;
+	float: none;
+	background-position: center;
+}
+.section-box-3 {
+	width: 96%;	
+	margin: 0px 2% 0px 2%;
+	float: none;
+}
+.section-box-4 {
+	width: 96%;
+	margin: 0px 0px 20px 2%;
+	float: none;
+	height: auto;
+}
+.section-box-5 {
+	width: 96%;
+	margin: 0px 2% 0px 2%;
+	float: none;
+	height: 300px;
+	background-position: center;
+}
+	
+	
+} /* closing bracket for MQ */
+
+
+
+
+
+
+
+
+
+
+
+	
+
